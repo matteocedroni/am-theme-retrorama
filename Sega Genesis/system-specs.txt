@@ -1,0 +1,6 @@
+Launch date (price): 19 AUG 1988 (180$)
+
+CPU(s): Motorola 68000 @ 7.6 MHz
+Zilog Z80 @ 3.58 MHz
+Resolution: 320x240
+Colors: 512 (61 on-screen)

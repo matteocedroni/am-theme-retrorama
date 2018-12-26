@@ -1,0 +1,5 @@
+Launch date (price): 29 SEP 1995 (299$)
+
+CPU(s): R3000A 32bit @ 33.7 MHz
+Resolution: 256x224 - 640x480 
+Colors: 16.47 million

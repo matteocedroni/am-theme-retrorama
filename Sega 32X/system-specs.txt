@@ -1,0 +1,5 @@
+Launch date (price): 19 NOV 1994 (160$)
+
+CPU(s): 2 × SH-2 32-bit RISC @ 23 MHz
+Resolution: 320x240
+Colors: 32,768 on screen

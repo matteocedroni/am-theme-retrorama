@@ -1,0 +1,5 @@
+Launch date (price): 11 APR 1992 (150$)
+
+CPU(s): Ricoh 5A22 @ 3.58 MH
+Resolution: 256×224
+Colors: 32768 (256 on screen)

@@ -1,0 +1,6 @@
+Launch date (price): 01 SEP 1986 (80$)
+
+CPU(s): Ricoh 2A03 @ 1.79MHz
+Zilog Z80 @ 3.58 MHz
+Resolution: 256x240
+Colors: 52 (24 on screen)
