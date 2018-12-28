@@ -2,6 +2,11 @@
 
 Reshaped Retrorama theme for Attract-Mode with 4:3 format.
 
+<p align="center">
+  <img src="https://github.com/matteocedroni/am-theme-retrorama/blob/master/example/layout-full-01.jpg">
+  <img src="https://github.com/matteocedroni/am-theme-retrorama/blob/master/example/layout-system-area.jpg">
+</p>
+
 #### Currently supported game systems
 * Nintendo  NES, SNES
 * Sega Megadrive, 32X
