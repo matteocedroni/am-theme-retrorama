@@ -1,0 +1,6 @@
+Launch date (price): 29 SEP 1996 (199$)
+
+CPU(s): NEC VR4300-64 @93,75 MHz
+Silicon Graphics-RPC Reality 64 bit @62,5 MHz
+Resolution: 320x240 - 640×480
+Colors: 16.7 million (32.768 on screen)

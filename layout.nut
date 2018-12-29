@@ -17,6 +17,12 @@ class UserConfig
 		order			= 2,
 		per_display		= "no"
 	/>	splashScreenDelay	= "3000";
+
+  </  label     = "Game list elements",
+    help      = "Game list elements visible on screen",
+    order     = 3,
+    per_display   = "no"
+  />  gameListElements = "20";
 }
 
 
@@ -39,7 +45,9 @@ local xs=surfaceWidth/1280.;
 //y scale factor
 local ys=surfaceHeight/1024.;
 
-local systemPath = fe.script_dir + fe.game_info(Info.System) + "/";
+local currentSystem = fe.game_info(Info.System);
+local currentGameList = fe.list.name;
+local systemPath = fe.script_dir + currentSystem + "/";
 
 local layoutConfig = fe.get_config();
 
@@ -123,7 +131,10 @@ class ShuffleList extends Shuffle {
 }
 
 
-local gameListSize = 20;
+local gameListSize = layoutConfig.gameListElements.tointeger();
+if (fe.list.size < gameListSize){
+  gameListSize = fe.list.size;
+}
 local gameList = ShuffleList(gameListSize, "text", "[!trimmedGameTitle]", true, fs);
 for (local i=0; i<gameListSize; i++) {
 	gameList.slots[i].set_pos(25*xs, 390*ys+(i*23), 580, 23);
@@ -220,7 +231,7 @@ function loadSystemSpec () {
 	print(fe.script_dir + fe.game_info(Info.System) + "/");
     local systemSpecsFileLines = [];
 	local systemSpecsText = "";
-	systemPath = fe.script_dir + fe.game_info(Info.System) + "/";
+	//systemPath = fe.script_dir + fe.game_info(Info.System) + "/";
 	local systemSpecsFile = ReadTextFile(systemPath, ThemeResource.SystemSpecs);
 	while( !systemSpecsFile.eos() ){
 		systemSpecsFileLines.push(systemSpecsFile.read_line());
@@ -234,8 +245,10 @@ function onTransition( ttype, var, transition_time )
 {
    local redraw_needed = false;
 
-   print(fe.game_info(Info.System));
-   if (ttype == Transition.StartLayout || ttype == Transition.ToNewList){
+   if (ttype == Transition.ToNewList && currentGameList!=fe.list.name){
+      fe.signal("reload"); 
+   }   
+   if (ttype == Transition.StartLayout){
    		loadSystemSpec();
    }
 
