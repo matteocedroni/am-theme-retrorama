@@ -169,7 +169,7 @@ numPlayers.charsize = 16*ys;
 numPlayers.align = Align.Centre;
 
 //Snap
-local snap = fs.add_artwork("snap", 680*xs,38*ys,565*xs,423*ys);
+local snap = fs.add_artwork("snap", 680*xs,39*ys,564*xs,424*ys);
 snap.trigger = Transition.EndNavigation;
 
 //Snap shader
