@@ -137,7 +137,7 @@ if (fe.list.size < gameListSize){
 }
 local gameList = ShuffleList(gameListSize, "text", "[!trimmedGameTitle]", true, fs);
 for (local i=0; i<gameListSize; i++) {
-	gameList.slots[i].set_pos(25*xs, 390*ys+(i*23), 580, 23);
+	gameList.slots[i].set_pos(25*xs, 390*ys+(i*23), 580*xs, 23*ys);
 	gameList.slots[i].align = Align.Right;
 	gameList.slots[i].charsize = 17*ys;
 }
