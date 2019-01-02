@@ -51,6 +51,7 @@ local systemPath = fe.script_dir + currentSystem + "/";
 
 local layoutConfig = fe.get_config();
 
+fe.layout.font = "VAGRounded-Bold";
 
 ThemeResource <- {
     OverviewBackground = "game-overview-bg.png",
@@ -73,10 +74,12 @@ SystemArtMode <-{
 local overwiewBg = fs.add_image(ThemeResource.OverviewBackground, 0, 0, 1280*xs, 1024*ys);
 
 local overviewText =fs.add_text("[Overview]", 680*xs, 800*ys, 558*xs, 700*ys)
-overviewText.charsize = 12;
+overviewText.charsize = 14*ys;
 overviewText.set_rgb( 0, 0, 0 );
 overviewText.align = Align.TopLeft;
 overviewText.word_wrap = true;
+overviewText.font="VAGRounded-Light_Italic";
+
 
 
 local bk = fs.add_image("[System]/"+ThemeResource.SystemBackground, 0, 0, 1280*xs, 1024*ys);
