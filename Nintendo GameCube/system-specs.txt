@@ -1,0 +1,5 @@
+Launch date (price): 18 NOV 2001 (199$)
+
+CPU(s): PowerPC Gekko @ 486MHz
+ATI Flipper @ 162MHz
+Resolution: 240p and 480i

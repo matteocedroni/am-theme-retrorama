@@ -1,0 +1,6 @@
+Launch date (price): 11 MAY 1995 (399$)
+
+CPU(s): 2 x 32bit SH2 @ 28.6 MHz
+1 x 32-Bit SH1 @ 20 MHz
+Resolution: 320×224 - 704×224 
+Colors: 16.47 million

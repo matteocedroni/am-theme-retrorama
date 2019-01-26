@@ -8,8 +8,8 @@ Reshaped Retrorama theme for Attract-Mode with 4:3 format.
 </p>
 
 #### Currently supported game systems
-* Nintendo  NES, SNES, N64
-* Sega Megadrive, 32X
+* Nintendo  NES, SNES, N64, GameCube
+* Sega Master System, Megadrive, 32X, Saturn
 * Sony Playstation 1
 
 I'll add more converted game system background asap 
@@ -30,6 +30,9 @@ Just copy theme folder into Attract-Mode layouts folder.
 
 ## Configuration
 Work in progress...
+
+#### System background
+Current system background is determined by matching emulator system identifier. Default behaviour can be overridden by `system` parameter.
 
 #### System image/video area
 Dedicated area for system specific image or video (es. original advertise).

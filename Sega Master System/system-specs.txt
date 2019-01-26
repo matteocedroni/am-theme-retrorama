@@ -1,0 +1,5 @@
+Launch date (price): 1 SEP 1986 (200$)
+
+CPU(s): Zilog Z80A @ 4 MHz
+Resolution: 256 × 192
+Colors: 64 (32 on-screen)

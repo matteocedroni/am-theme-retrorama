@@ -4,6 +4,13 @@
 
 class UserConfig
 {
+    </  label     = "System",
+    help      = "Current system. Auto for match mode by system identifier",
+    options     = "auto,Arcade,Nintendo 64,Nintendo Entertainment System,Nintendo GameCube,Sega 32X,Sega Genesis,Sega Master System,Sega Saturn,Sony PlayStation,Super Nintendo Entertainment System",
+    order     = 1,
+    per_display   = "yes"
+  />  system = "auto";
+
     </ 	label			= "System Art Mode",
 		help			= "Video or static image for current system art",
 		options			= "video,image",
@@ -45,11 +52,19 @@ local xs=surfaceWidth/1280.;
 //y scale factor
 local ys=surfaceHeight/1024.;
 
-local currentSystem = fe.game_info(Info.System);
+local layoutConfig = fe.get_config();
+
 local currentGameList = fe.list.name;
+local currentSystem;
+if (layoutConfig.system=="auto"){
+  currentSystem = fe.game_info(Info.System);
+}
+else{
+  currentSystem = layoutConfig.system;
+}
+
 local systemPath = fe.script_dir + currentSystem + "/";
 
-local layoutConfig = fe.get_config();
 
 fe.layout.font = "VAGRounded-Bold";
 
@@ -82,7 +97,7 @@ overviewText.font="VAGRounded-Light_Italic";
 
 
 
-local bk = fs.add_image("[System]/"+ThemeResource.SystemBackground, 0, 0, 1280*xs, 1024*ys);
+local bk = fs.add_image(systemPath+"/"+ThemeResource.SystemBackground, 0, 0, 1280*xs, 1024*ys);
 
 /*
 local overviewTextScroll = {
@@ -115,7 +130,7 @@ systemSpecs.align = Align.TopRight;
 systemSpecs.word_wrap = true;
 
 
-local systemImage = fs.add_image("[System]/"+ThemeResource.SystemImage, 21*xs,184*ys,242*xs,179*ys);
+local systemImage = fs.add_image(systemPath+"/"+ThemeResource.SystemImage, 21*xs,184*ys,242*xs,179*ys);
 if (SystemArtMode.Video == layoutConfig.systemArtMode){
 	systemImage.video_flags = Vid.NoAudio;
 }
@@ -193,7 +208,7 @@ flyer.trigger = Transition.EndNavigation;
 local modalOverlay = fs.add_image(ThemeResource.ModalOverlay, 0, 0, surfaceWidth, surfaceHeight);
 modalOverlay.alpha=220;
 
-local splashImage = fe.add_image("[System]/" + ThemeResource.SystemSplash, 0,0,900*xs,506*ys);
+local splashImage = fe.add_image(systemPath+"/" + ThemeResource.SystemSplash, 0,0,900*xs,506*ys);
 splashImage.x = (surfaceWidth/2)-(splashImage.width/2);
 splashImage.y = (surfaceHeight/2)-(splashImage.height/2);
 
@@ -231,10 +246,8 @@ animation.add( PropertyAnimation ( modalOverlay, modalOverlayFadeOut ) );
 
 
 function loadSystemSpec () {
-	print(fe.script_dir + fe.game_info(Info.System) + "/");
-    local systemSpecsFileLines = [];
+  local systemSpecsFileLines = [];
 	local systemSpecsText = "";
-	//systemPath = fe.script_dir + fe.game_info(Info.System) + "/";
 	local systemSpecsFile = ReadTextFile(systemPath, ThemeResource.SystemSpecs);
 	while( !systemSpecsFile.eos() ){
 		systemSpecsFileLines.push(systemSpecsFile.read_line());
@@ -263,4 +276,3 @@ function onTransition( ttype, var, transition_time )
 
 
 fe.add_transition_callback("onTransition");
-
