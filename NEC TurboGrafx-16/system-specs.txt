@@ -1,0 +1,6 @@
+Launch date (price): 29 AUG 1989 (299.99$)
+
+CPU(s): 8-bit HuC6280A @7.6 MHz
+16-bit (HuC6270A + HuC6260)
+Resolution: 256x224 - 512x242
+Colors: 512 (482 on screen)

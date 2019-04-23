@@ -6,7 +6,7 @@ class UserConfig
 {
     </  label     = "System",
     help      = "Current system. Auto for match mode by system identifier",
-    options     = "auto,Arcade,Nintendo 64,Nintendo Entertainment System,Nintendo GameCube,Sega 32X,Sega Genesis,Sega Master System,Sega Saturn,Sony PlayStation,Super Nintendo Entertainment System",
+    options     = "auto,Arcade,Nintendo 64,Nintendo Entertainment System,Nintendo GameCube,Sega 32X,Sega Genesis,Sega Master System,Sega Saturn,Sony PlayStation,Super Nintendo Entertainment System,NEC TurboGrafx-16",
     order     = 1,
     per_display   = "yes"
   />  system = "auto";
@@ -70,7 +70,7 @@ fe.layout.font = "VAGRounded-Bold";
 
 ThemeResource <- {
     OverviewBackground = "game-overview-bg.png",
-    SystemBackground = "system-bg.png",
+    SystemBackground = "system-bg",
     SystemSpecs = "system-specs.txt",
     SystemSplash = "system-splash.jpg",
     ModalOverlay = "modal-overlay.png"
@@ -95,9 +95,13 @@ overviewText.align = Align.TopLeft;
 overviewText.word_wrap = true;
 overviewText.font="VAGRounded-Light_Italic";
 
-
-
-local bk = fs.add_image(systemPath+"/"+ThemeResource.SystemBackground, 0, 0, 1280*xs, 1024*ys);
+local bk = null;
+if (fe.path_test(systemPath+"/"+ThemeResource.SystemBackground+".png" , PathTest.IsFile)){
+	bk = fs.add_image(systemPath+"/"+ThemeResource.SystemBackground+".png", 0, 0, 1280*xs, 1024*ys);
+}
+else{
+	bk = fs.add_image(systemPath+"/"+ThemeResource.SystemBackground+".jpg", 0, 0, 1280*xs, 1024*ys);
+}
 
 /*
 local overviewTextScroll = {
