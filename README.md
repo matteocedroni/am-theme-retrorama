@@ -12,6 +12,7 @@ Reshaped Retrorama theme for Attract-Mode with 4:3 format.
 * Nintendo  NES, SNES, N64, GameCube
 * Sega Master System, Megadrive, 32X, Saturn
 * Sony Playstation 1
+* NEC TurboGrafx 16
 
 I'll add more converted game system background asap 
 
