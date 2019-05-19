@@ -157,12 +157,22 @@ local gameListSize = layoutConfig.gameListElements.tointeger();
 if (fe.list.size < gameListSize){
   gameListSize = fe.list.size;
 }
-local gameList = ShuffleList(gameListSize, "text", "[!trimmedGameTitle]", true, fs);
+
+local gameList = [];
 for (local i=0; i<gameListSize; i++) {
-	gameList.slots[i].set_pos(25*xs, 390*ys+(i*23), 580*xs, 23*ys);
-	gameList.slots[i].align = Align.Right;
-	gameList.slots[i].charsize = 17*ys;
+	gameList.push(fs.add_text("[!trimmedGameTitle]", 25*xs, 390*ys+(i*23), 580*xs, 23*ys));
+	gameList[i].align = Align.Right;
+	gameList[i].charsize = 17*ys;
+	
 }
+local gameListShuffle = ShuffleList(gameList, "text");
+
+//local gameList = ShuffleList(gameListSize, "text", "[!trimmedGameTitle]", true, fs);
+//for (local i=0; i<gameListSize; i++) {
+//	gameList.slots[i].set_pos(25*xs, 390*ys+(i*23), 580*xs, 23*ys);
+//	gameList.slots[i].align = Align.Right;
+//	gameList.slots[i].charsize = 17*ys;
+//}
 
 //Game gategory
 local category = fs.add_text( "[Category]", 1020*xs, 490*ys, 217*xs, 45*ys );
