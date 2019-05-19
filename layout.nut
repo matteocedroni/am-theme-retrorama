@@ -93,7 +93,7 @@ overviewText.charsize = 14*ys;
 overviewText.set_rgb( 0, 0, 0 );
 overviewText.align = Align.TopLeft;
 overviewText.word_wrap = true;
-overviewText.font="VAGRounded-Light_Italic";
+overviewText.font="Roboto-LightItalic";
 
 local bk = null;
 if (fe.path_test(systemPath+"/"+ThemeResource.SystemBackground+".png" , PathTest.IsFile)){
