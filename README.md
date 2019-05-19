@@ -17,7 +17,7 @@ Reshaped Retrorama theme for Attract-Mode with 4:3 format.
 I'll add more converted game system background asap 
 
 ### Prerequisites
-* [Shuffle Plugin v.1.0.0] (https://github.com/keilmillerjr/shuffle-module/tree/v1.0.0) installed;
+* [Shuffle Module v.1.0.0] (https://github.com/keilmillerjr/shuffle-module/tree/v1.0.0) installed;
 
 ## Features
 * 4:3 reshaped/rearranged layout, no image stretching;
