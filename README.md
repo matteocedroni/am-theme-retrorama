@@ -15,7 +15,7 @@ Reshaped Retrorama theme for Attract-Mode with 4:3 format.
 * NEC TurboGrafx 16
 * Capcom Play System, Play System 2, Play System 3
 * Amiga
-* SNK Neo Geo MVS, SNK Neo Geo CD
+* SNK Neo Geo MVS, Neo Geo CD
 * Daphne
 
 I'll add more converted game system background asap 
