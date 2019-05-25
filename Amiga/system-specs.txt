@@ -1,0 +1,5 @@
+Launch date (price): 25 OCT 1987 (699$)
+
+CPU(s): Motorola 68000 @7MHz
+Resolution: 320×200 - 704×576
+Colors: 4096 (HAM)

@@ -1,0 +1,5 @@
+Launch date: 04 FEB 1997
+
+CPU(s): HD6417099 (SH-2) @25 MHz
+Resolution: 384×224 496×224
+Colors: 16.47 million (32.768 on screen)

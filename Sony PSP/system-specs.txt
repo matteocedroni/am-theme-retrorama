@@ -1,0 +1,5 @@
+Launch date (price): 29 MAR 2005 (249$)
+
+CPU(s): MIPS R4000 @20-333 MHz
+Resolution: 480 × 272
+Colors: 16.47 million

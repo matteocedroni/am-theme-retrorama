@@ -1,0 +1,5 @@
+Launch date: 19 JUN 1983
+
+CPU(s): Zilog Z80
+Resolution: 336x240
+Colors: n/d

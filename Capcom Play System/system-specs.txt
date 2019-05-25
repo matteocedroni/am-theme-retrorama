@@ -1,0 +1,6 @@
+Launch date: 06 FEB 1991
+
+CPU(s): Motorola 68000 @10MHz
+Zilog Z80 @3.579 MHz
+Resolution: 384x224
+Colors: 65536 (4096 on screen)

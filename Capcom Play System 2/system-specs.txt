@@ -1,0 +1,6 @@
+Launch date: 06 MAR 1996
+
+CPU(s): encrypted 68000 @16 MHz
+Zilog Z80 @8 MHz
+Resolution: 384x224
+Colors: 16.47 million (4096 on screen)

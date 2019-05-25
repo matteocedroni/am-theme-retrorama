@@ -1,0 +1,5 @@
+Launch date (price): 09 SEP 1999 (199$)
+
+CPU(s): SH-4 RISC @200 MHz
+Resolution: 640×480
+Colors: 16.7 million (32.768 on screen)

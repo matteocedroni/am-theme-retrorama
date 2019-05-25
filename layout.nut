@@ -6,7 +6,7 @@ class UserConfig
 {
     </  label     = "System",
     help      = "Current system. Auto for match mode by system identifier",
-    options     = "auto,Arcade,Nintendo 64,Nintendo Entertainment System,Nintendo GameCube,Sega 32X,Sega Genesis,Sega Master System,Sega Saturn,Sony PlayStation,Super Nintendo Entertainment System,NEC TurboGrafx-16",
+    options     = "auto,Amiga,Arcade,Capcom Play System,Capcom Play System 2,Capcom Play System 3,Nintendo 64,Nintendo Entertainment System,Nintendo GameCube,Sega 32X,Sega Genesis,Sega Master System,Sega Saturn,Sega Dreamcast,Sony PlayStation,Sony PSP,Super Nintendo Entertainment System,NEC TurboGrafx-16,SNK Neo Geo MVS,SNK Neo Geo CD",
     order     = 1,
     per_display   = "yes"
   />  system = "auto";
