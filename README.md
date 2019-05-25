@@ -10,9 +10,13 @@ Reshaped Retrorama theme for Attract-Mode with 4:3 format.
 #### Currently supported game systems
 * Arcade
 * Nintendo  NES, SNES, N64, GameCube
-* Sega Master System, Megadrive, 32X, Saturn
-* Sony Playstation 1
+* Sega Master System, Megadrive, 32X, Saturn, Dreamcast
+* Sony Playstation 1, PSP
 * NEC TurboGrafx 16
+* Capcom Play System, Play System 2, Play System 3
+* Amiga
+* SNK Neo Geo MVS, SNK Neo Geo CD
+* Daphne
 
 I'll add more converted game system background asap 
 
